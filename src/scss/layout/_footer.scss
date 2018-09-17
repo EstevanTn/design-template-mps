@@ -1,0 +1,53 @@
+.external__link {
+    display: flex;
+    height: 70px;
+    transition: all .6s ease-in-out;
+    
+    &-header {
+        @extend .flex-center;
+        background-color: $primary-color;
+        color: $color-light;
+        width: 230px;
+        padding: .5rem;
+        text-align: center;
+    }
+    
+    &-title {
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        font-family: 'Dosis', sans-serif;
+        font-weight: 600;
+    }
+    
+    &-content{
+        background-color: darken($color-light, 5%);
+        width: calc( 100% - 230px );
+        overflow: hidden;
+    }
+    
+    &-list {
+        display: flex;
+        list-style: none;
+        margin-bottom: 0px;
+        -webkit-padding-start: 0px;
+        height: 100%;
+        li {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            a {
+                padding: .3rem .5rem;
+            }
+        }
+    }
+    
+    @include hasta($md) {
+        display: none;
+    }
+}
+
+.wrapper__footer {
+    width: 100%;
+    min-height: 120px;
+    background: $color-dark;
+}

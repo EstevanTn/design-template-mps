@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    @extend .full;
+    flex-direction: column;
+    position: fixed;
+    
+    &__header {
+        width: 100%;
+        z-index: 1;
+        transition: .5s ease-in-out;
+        &-picture {
+            visibility: visible;
+            transition: .5s ease-in-out;
+            animation: bounceInDown .5s ease-in-out;
+        }
+    }
+    
+    &__main {
+        overflow: auto;
+    }
+    
+    &__content {
+        min-height: 460px;
+    }
+    
+    &.no-heading-picture {
+        .wrapper__header-picture {
+            visibility: hidden;
+            display: none;
+            transition: 2s ease-in-out;
+            animation: bounceInUp .5s ease-in-out;
+        }
+        .wrapper__content {
+            margin-top: 0px;
+        }
+    }
+}

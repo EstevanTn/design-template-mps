@@ -1,0 +1,68 @@
+- var navbarID = "myNavbar";
+section.wrapper__header
+    .wrapper__header-picture
+        .box-picture.box-picture-left
+            img(class="full" src="/images/portada/chimbote.png")
+        .box-picture.box-picture-center.box-row-3
+            .picture.box-col.img-green-over
+                img(src="/images/portada/portada1.png")
+            .picture.box-col.img-red-over
+                img(src="/images/portada/portada2.png")
+            .picture.box-col.img-yellow-over
+                img(src="/images/portada/portada3.png")
+        .box-picture.box-picture-right.flex-center-column
+            .box__card
+                .box__card-icon
+                    i.ion.ion-md-contact
+                .box__card-content
+                    small Teléfono
+                    strong 043 - 321331
+            .box__card
+                .box__card-icon
+                    i.ion.ion-md-calendar
+                .box__card-content
+                    small Horario
+                    strong 043 - 321331
+    nav(class="navbar navbar-expand-lg navbar-dark bg-theme")
+        .container
+            a(href="index.html" class="navbar-brand")
+                span.navbar-brand-logo
+                .navbar-brand-name
+                    span.text-description Municipalidad Provincial
+                    span.text-description del Santa
+            button(class="navbar-toggler" type="button" data-toggle="collapse" data-target=`#${navbarID}` aria-controls=`${navbarID}` aria-expanded="false" aria-label="Toggle Navigation")
+                span(class="navbar-toggler-icon")
+            div(class="collapse navbar-collapse" id=`${navbarID}`)
+                ul(class="navbar-nav mr-auto")
+                    li(class="nav-item active")
+                        a(class="nav-link" href="index.html")
+                            i.ion.ion-md-home
+                            | Inicio
+                    li(class="nav-item")
+                        a(class="nav-link" href="#")
+                            i.ion.ion-md-business
+                            | Municipalidad
+                    li(class="nav-item")
+                        a(class="nav-link" href="#")
+                            i.ion.ion-md-globe
+                            | Ciudad
+                    li(class="nav-item")
+                        a(class="nav-link" href="#")
+                            i.ion.ion-md-bookmarks
+                            | Tupa
+                    li(class="nav-item dropdown")
+                        a(class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown" href="#" role="button" data-haspoup="true" aria-expanded="false")
+                            i.fa.fa-handshake-o
+                            | Servicios
+                        div(class="dropdown-menu" labelledby="navbarDropdown")
+                            a.dropdown-item(href="#") Action 1
+                            .dropdown-divider
+                            a.dropdown-item(href="#") Action 2
+                    li(class="nav-item")
+                        a(class="nav-link" href="#")
+                            i.ion.ion-md-mail
+                            | Email
+                    li(class="nav-item")
+                        a(class="nav-link" href="#")
+                            i.ion.ion-md-eye
+                            | Transparencia

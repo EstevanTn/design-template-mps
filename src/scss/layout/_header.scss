@@ -1,0 +1,103 @@
+.wrapper__header{
+    &-picture {
+        height: $height-header-picture-md;
+        display: flex;
+        .box-picture {
+            height: 100%;
+            &-left,
+            &-right{
+                width: 180px;
+                background: $secondary-color;
+                padding: 10px;
+            }
+            &-center {
+                display: flex;
+                width: calc( 100% - 360px );
+            }
+            .picture {
+                > img {
+                    height: $height-header-picture-md;
+                    width: 100%;
+                }
+            }
+        }
+        @include hasta($xs) { display: none; }
+        @include hasta($sm) {
+            height: 7rem;
+            .box-picture {
+                &-left,
+                &-right{
+                    display: none;
+                }
+                &-center {
+                    width: 100%;
+                }
+                .picture{
+                    > img {
+                        height: $height-header-picture-sm;
+                    }
+                }
+            }
+        }
+    }
+    
+    nav {
+        &.navbar {
+            @include desde($md) {
+                padding: 0px;
+            }
+            .navbar-brand {
+                display: inline-flex;
+                &-logo {
+                    display: inline-flex;
+                    background: url('../images/logo-white.png');
+                    background-size: 100% 100%;
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 5px;
+                    content: "";
+                    margin-right: 5px;
+                }
+                &-name {
+                    display: inline-flex;
+                    flex-direction: column;
+                    span {
+                        font-size: .9rem;
+                    }
+                    .text-description {
+                        font-size: .7rem;
+                    }
+                }
+            }
+            &.bg-theme {
+                background: $primary-color !important;
+                .navbar-nav {
+                    .nav-item {
+                        border-right: 1px solid rgba($color-light, .6);
+                        @include hasta($md) {
+                            border: none;
+                        }
+                        .nav-link {
+                            color: $color-light;
+                            text-transform: uppercase;
+                            i {
+                                width: 24px;
+                                height: 24px;
+                                margin-right: 4px;
+                                text-align: center;
+                            }
+                            &:hover,
+                            &:focus{
+                                background: $secondary-color;
+                                color: #222222;
+                            }
+                        }
+                        &:last-child {
+                            border-color: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

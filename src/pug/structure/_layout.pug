@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Municipalidad Provincial del Santa
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css")
+        link(rel="stylesheet", href="css/style.css")
+        link(rel="stylesheet", href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css")
+        link(rel="shortcut icon", href="images/tunaqui.png", type="image/x-icon")
+    body
+        .wrapper
+            include _header
+            .wrapper__main
+                block content
+                include _footer
+        script(src="js/bundle.js")
