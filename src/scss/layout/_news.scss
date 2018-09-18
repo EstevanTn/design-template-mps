@@ -1,0 +1,38 @@
+.news {
+    &__panel {
+        @extend .flex-center-column;
+        border: 1px solid darken($color-light, 5%);
+        max-height: 200px;
+        > div {
+            width: 100%;
+        }
+        &-header {
+            padding: .5rem 1rem .5rem 1rem;
+            border-bottom: 1px solid darken($color-light, 5%);
+        }
+        &-body {
+            overflow: auto;
+            display: block;
+            a {
+                display: block;
+                padding: .5rem 1rem .5rem 1rem;
+                border-bottom: 1px solid darken($color-light, 5%);
+                &:hover,
+                &:focus {
+                    background-color: darken($color-light, 5%);
+                }
+                &:last-child {
+                    border-bottom: 1px solid transparent;
+                }
+            }
+        }
+        &-title {
+            margin-bottom: 0px;
+            -webkit-padding-start: 0px;
+            font-size: 1.2rem;
+            font-family: 'Dosis', sans-serif;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    }
+}

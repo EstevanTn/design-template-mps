@@ -20,7 +20,7 @@
     }
     
     &-content{
-        background-color: darken($color-light, 5%);
+        background-color: $color-light;
         width: calc( 100% - 230px );
         overflow: hidden;
     }
@@ -41,7 +41,7 @@
         }
     }
     
-    @include hasta($md) {
+    @include hasta($sm) {
         display: none;
     }
 }

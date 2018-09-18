@@ -1,97 +1,74 @@
 extends ../structure/_layout
 block content
     section.wrapper__content
-        .section
+        .section.section__parallax.section__plaza
+        .section.py-5
             h3.section__title Recientes
             .section__content
-                | aaaa
-        .section
-            h3.section__title Novedades
-            .section__content
-                .row.flex-center
-                    .col-12.col-sm-6.col-md-4
-                        a.box__card.box__card-column.box__card-link-theme(href="#")
-                            .box__card-icon
-                                i.ion-md-paper
-                            .box__card-content
-                                strong.text-title Notas de Prensa
-                    .col-12.col-sm-6.col-md-4
-                        a.box__card.box__card-column.box__card-link-theme(href="#")
-                            .box__card-icon
-                                i.ion-md-search
-                            .box__card-content
-                                strong.text-title Control Interno
-                    .col-12.col-sm-6.col-md-4
-                        a.box__card.box__card-column.box__card-link-theme(href="#")
-                            .box__card-icon
-                                i.ion-md-person
-                            .box__card-content
-                                strong.text-title Agenda Municipal
-        .section.section__bg
-            h3.section__title Infórmate
-            .section__content
-                .row.flex-center
-                    .col-12.col-sm-6.col-md-4
-                        a(href="#" class="box__card box__card-column text-dark py-2")
-                            .box__card-icon
-                                i.ion-md-bookmarks
-                            .box__card-content
-                                strong.text-title Normas de Gestión Pública                                
-                    .col-12.col-sm-6.col-md-4
-                        a(href="#" class="box__card box__card-column text-dark py-2")
-                            .box__card-icon
-                                i.ion-md-trending-up
-                            .box__card-content
-                                strong.text-title Obras por Gestión
-                    .col-12.col-sm-6.col-md-4
-                        a(href="#" class="box__card box__card-column text-dark py-2")
-                            .box__card-icon
-                                i.ion-md-home
-                            .box__card-content
-                                strong.text-title Locales Municipales
-                    .col-12.col-sm-6.col-md-4
-                        a(href="#" class="box__card box__card-column text-dark py-2")
-                            .box__card-icon
-                                i.ion-md-cash
-                            .box__card-content
-                                strong.text-title Tributos Municipales
-                    .col-12.col-sm-6.col-md-4
-                        a(href="#" class="box__card box__card-column text-dark py-2")
-                            .box__card-icon
-                                i.ion-md-ribbon
-                            .box__card-content
-                                strong.text-title Licencias Municipales
-        .section
-            h3.section__title Servicios
-            .section__content
                 .row
-                    .col-12.col-md-7
+                    .col-12.col-md-8
                         .row
-                            .col-12.col-sm-6
-                                a(href="#external-link" class="link-image")
-                                    img(src="/images/servicios/areas-verdes.png")
-                            .col-12.col-sm-6
-                                a(href="#external-link" class="link-image")
-                                    img(src="/images/servicios/demuna.png")
-                            .col-12.col-sm-6
-                                a(href="#external-link" class="link-image")
-                                    img(src="/images/servicios/muni-salud.png")
-                            .col-12.col-sm-6
-                                a(href="#external-link" class="link-image")
-                                    img(src="/images/servicios/policia-municipal.png")
-                            .col-12.col-sm-6
-                                a(href="#external-link" class="link-image")
-                                    img(src="/images/servicios/limpieza-publica.png")
-                            .col-12.col-sm-6
-                                a(href="#external-link" class="link-image")
-                                    img(src="/images/servicios/unidad-canina.png")
-                    .col-12.col-md-5
-                        .card.mt-3.mt-md-0
-                            .card-body
-                                h5.card-title Combo de supervivencia
-                                p.card-text Mochila de Emergencia + Caja de Reserva: Contiene artículos para las primeras 24 horas, se debe de llevar durante la evacuación de desastres naturales y...
-                                a(class="btn btn-primary" href="#") Ver más...
-        .section.section__bg
-            h3.section__title Turismo
+                            .col-12.col-md-6
+                                #carouselOne(class="carousel carousel__bg slide" data-ride="slide")
+                                    .carousel-inner
+                                        .carousel-item.active
+                                            img(src="images/portada/chimbote.png")
+                                        .carousel-item
+                                            img(src="images/portada/chimbote.png")
+                                        .carousel-item
+                                            img(src="images/portada/chimbote.png")
+                                        .carousel-item
+                                            img(src="images/portada/chimbote.png")
+                                    a.carousel-control-prev(data-slide="prev" href="#carouselOne")
+                                        i.fa.fa-chevron-left
+                                    a.carousel-control-next(data-slide="next" href="#carouselOne")
+                                        i.fa.fa-chevron-right
+                            .col-12.col-md-6
+                                #carouselTwo(class="carousel carousel__bg slide" data-ride="slide")
+                                    .carousel-inner
+                                        .carousel-item.active
+                                        .carousel-item
+                                        .carousel-item
+                                        .carousel-item
+                                    a.carousel-control-prev(data-slide="prev" href="#carouseTwo")
+                                        i.fa.fa-chevron-left
+                                    a.carousel-control-next(data-slide="next" href="#carouseTwo")
+                                        i.fa.fa-chevron-right
+                    .col-12.col-md-4
+                        .news__panel
+                            .news__panel-header
+                                h3.news__panel-title Noticias
+                            .news__panel-body
+                                a(href="#news-1") Noticia 1
+                                a(href="#news-2") Noticia 2
+                                a(href="#news-3") Noticia 3
+                                a(href="#news-1") Noticia 4
+                                a(href="#news-2") Noticia 5
+                                a(href="#news-3") Noticia 6
+                                a(href="#news-1") Noticia 7
+                                a(href="#news-2") Noticia 8
+                                a(href="#news-3") Noticia 9
+
+        .section.section__parallax.section__bg.py-5
             .section__content
+                .row.flex-center
+                    .col-12.col-sm-6.col-md-4
+                        a(href="servicios.html" class="box__card box__card-column box__card-link-theme")
+                            .box__card-icon
+                                i.ion-md-checkmark
+                            .box__card-content
+                                strong.text-title Servicios
+                    .col-12.col-sm-6.col-md-4
+                        a(href="novedades.html" class="box__card box__card-column box__card-link-theme")
+                            .box__card-icon
+                                i.ion-md-checkmark
+                            .box__card-content
+                                strong.text-title Novedades
+                    .col-12.col-sm-6.col-md-4
+                        a(href="informate.html" class="box__card box__card-column box__card-link-theme")
+                            .box__card-icon
+                                i.ion-md-checkmark
+                            .box__card-content
+                                strong.text-title Informate
+
         

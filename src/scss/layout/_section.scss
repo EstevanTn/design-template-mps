@@ -17,4 +17,15 @@
     &__bg {
         background-color: darken($color-light, 5%);
     }
+
+    &__parallax {
+        background-attachment: fixed !important;
+        background-position: 100% 100% !important;
+        background-size: 100%;
+    }
+
+    &__plaza {
+        background-image: url('../images/portada/plaza-chimbote.jpg');
+        min-height: calc( 100vh - 250px );
+    }
 }

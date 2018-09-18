@@ -17521,20 +17521,20 @@ global.$ = global.jQuery = _jquery2.default;
 
 var headinglass = false;
 
-(0, _jquery2.default)('.wrapper__main').scroll(function () {
-    var show = (0, _jquery2.default)('.wrapper__main').scrollTop() >= 200;
-    if (show) {
-        if (!headinglass) {
-            (0, _jquery2.default)('.wrapper').addClass('no-heading-picture');
+/*$('.wrapper__main').scroll(function() {
+    var show = $('.wrapper__main').scrollTop() >= 200;
+    if(show) {
+        if(!headinglass) {
+            $('.wrapper').addClass('no-heading-picture');
             headinglass = true;
         }
     } else {
-        if (headinglass) {
-            (0, _jquery2.default)('.wrapper').removeClass('no-heading-picture');
+        if(headinglass) {
+            $('.wrapper').removeClass('no-heading-picture');
             headinglass = false;
         }
     }
-});
+});*/
 
 }).call(this,typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
 

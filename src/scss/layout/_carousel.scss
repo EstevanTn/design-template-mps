@@ -1,0 +1,7 @@
+.carousel {
+    &__bg {
+        background-color: darken($color-light, 5%);
+        height: 100%;
+        width: 100%;
+    }
+}

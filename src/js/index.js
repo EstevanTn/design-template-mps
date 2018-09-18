@@ -12,7 +12,7 @@ import 'bootstrap';
 
 let headinglass = false;
 
-$('.wrapper__main').scroll(function() {
+/*$('.wrapper__main').scroll(function() {
     var show = $('.wrapper__main').scrollTop() >= 200;
     if(show) {
         if(!headinglass) {
@@ -25,4 +25,4 @@ $('.wrapper__main').scroll(function() {
             headinglass = false;
         }
     }
-});
+});*/
