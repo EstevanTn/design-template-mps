@@ -1,0 +1,235 @@
+extends ../structure/_layout
+block content
+	section.wrapper__content
+		.section.section__bg
+			h3.section__title ORGANIZACIÓN
+			.section__content
+				.row
+					.col-12.col-md-3
+						.box__card-content
+							div(class="list-group" id="list-tab" role="tablist")
+								a(href="#list-alcaldia" class="list-group-item list-group-item-action" id="list-alcaldia-list" data-toggle="list" role="tab" aria-controls="alcaldia") Alcaldía
+								a(href="#list-gmunicipal" class="list-group-item list-group-item-action" id="list-gmunicipal-list" data-toggle="list" role="tab" aria-controls="gmunicipal") Gerencia Municipal
+								a(href="#list-gfinanzas" class="list-group-item list-group-item-action" id="list-gfinanzas-list" data-toggle="list" role="tab" aria-controls="gfinanzas") G. Administración y Finanzas
+								a(href="#list-gtributaria" class="list-group-item list-group-item-action" id="list-gtributaria-list" data-toggle="list" role="tab" aria-controls="gtributaria") G. Administración Tributaria
+								a(href="#list-ajuridica" class="list-group-item list-group-item-action" id="list-ajuridica-list" data-toggle="list" role="tab" aria-controls="ajuridica") G. Asesoría Jurídica
+								a(href="#list-dlocal" class="list-group-item list-group-item-action" id="list-dlocal-list" data-toggle="list" role="tab" aria-controls="dlocal") G. Desarrollo Local
+								a(href="#list-dsocial" class="list-group-item list-group-item-action" id="list-dsocial-list" data-toggle="list" role="tab" aria-controls="dsocial") G. Desarrollo Social y Humano
+								a(href="#list-gambiental" class="list-group-item list-group-item-action" id="list-gambiental-list" data-toggle="list" role="tab" aria-controls="gambiental") G. Gestión Ambiental y Salud Pública
+								a(href="#list-informatica" class="list-group-item list-group-item-action" id="list-informatica-list" data-toggle="list" role="tab" aria-controls="informatica") G. Informática y TIC
+								a(href="#list-obras" class="list-group-item list-group-item-action" id="list-obras-list" data-toggle="list" role="tab" aria-controls="obras") G. Obras Públicas
+								a(href="#list-presupuesto" class="list-group-item list-group-item-action" id="list-presupuesto-list" data-toggle="list" role="tab" aria-controls="presupuesto") G. Planeamiento y Presupuesto
+								a(href="#list-rhumanos" class="list-group-item list-group-item-action" id="list-rhumanos-list" data-toggle="list" role="tab" aria-controls="rhumanos") G. Recursos Humanos
+								a(href="#list-transporte" class="list-group-item list-group-item-action" id="list-transporte-list" data-toggle="list" role="tab" aria-controls="transporte") G. Transporte y Tránsito
+								a(href="#list-descentral" class="list-group-item list-group-item-action" id="list-descentral-list" data-toggle="list" role="tab" aria-controls="odescentral") Órganos Descentralizados							
+
+					.col-12.col-md-9
+						.box__card-content
+							div(class="tab-content" id="nav-tabContent")
+								//- Alcaldía
+								div(class="tab-pane fade show active" id="list-alcaldia" role="tabpanel" aria-labelledby="list-alcaldia-list")
+									h3 Alcaldía
+									div(class="card mb-3")
+										img(src="images/areas/alcaldia/alcaldia.jpg" class="card-img-top", alt="alcaldia")
+										div(class="card-body")
+											p ALCALDE: Neptalí Briceño Porras										
+											div(id="accordion")
+												div(class="card")
+													div(class="card-header" id="headingOne")
+														h5(class="mb-0")
+															button(class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Visión
+													div(id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion")
+														div(class="card-body")
+															p Somos una entidad competitiva, comprometida a la alta productividad, de reconocido prestigio, que contribuye a mejorar permanentemente la condición de vida de los Chimbotanos. La gestión se sustentará en el Ordenamiento Jurídico Vigente, una estructura orgánica funcional y adecuada, la prestación de servicios de calidad, el trabajo en equipo, la sostenibilidad presupuestaria, la protección del ambiente, la participación ciudadana y la comunicación efectiva.
+												div(class="card")
+													div(class="card-header" id="headingTwo")
+														h5(class="mb-0")
+															button(class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") Funciones
+													div(id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion")
+														div(class="card-body")
+															p -Promover la adecuada prestación de los servicios públicos Locales.
+															p -Promover el desarrollo económico integral, sostenible y armónico de su circunscripción.
+															p -Comunicación con el ciudadano.
+															p -Promover el desarrollo de programas sociales.
+															p -Planificar integralmente el desarrollo local y el ordenamiento territorial, en el nivel provincial.
+															p -Articular permanentemente los planes integrales de desarrollo distrital y los Presupuestos Participativos.
+															p -Promover, apoyar y ejecutar proyectos de inversión y servicios públicos municipales que presenten, objetivamente, externalidades o economías de escala de ámbito provincial.
+															p -Emitir las normas técnicas generales, en materia de organización del espacio físico y uso del suelo así como sobre protección y conservación del ambiente.
+												div(class="card")
+													div(class="card-header" id="headingThree")
+														h5(class="mb-0")
+															button(class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree") Ubicación
+												div(id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion")
+													div(class="card-body")
+														p - Teléfono: 043 321331 - 043 328890
+														p - Dirección: Jr. Enrique Palacios 341
+								//- Gerencia Municipal
+								div(class="tab-pane fade show" id="list-gmunicipal" role="tabpanel" aria-labelledby="list-gmunicipal-list")
+									h3 Gerencia Municipal
+									div(class="card mb-3")
+										img(src="images/areas/gmunicipal/gmunicipal.jpg" class="card-img-top", alt="alcaldia")
+										div(class="card-body")
+											p GERENTE MUNICIPAL: 
+											div(id="accordion")
+												div(class="card")
+													div(class="card-header" id="headingOne")
+														h5(class="mb-0")
+															button(class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Presentación
+													div(id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion")
+														div(class="card-body")
+															p La Gerencia Municipal es el órgano de Dirección de más alto nivel técnico – administrativo, encargado de dirigir y conducir la gestión administrativa, financiera y económica de la entidad, así como el funcionamiento y la prestación de los servicios municipales en general, con plena sujeción a las normas vigentes. Está a cargo del Gerente Municipal que es designado por el Alcalde en condición de funcionario de confianza a tiempo completo y dedicación exclusiva, depende del Alcalde y ejerce mando sobre los órganos de línea, asesoramiento y de apoyo que no tengan relación directa de dependencia con la Alcaldía, con los cuales en todo caso mantiene relaciones de coordinación. Por delegación o encargo del Alcalde, complementa las funciones ejecutivas y administrativas de la Alcaldía.
+												div(class="card")
+													div(class="card-header" id="headingTwo")
+														h5(class="mb-0")
+															button(class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") Atribuciones
+													div(id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion")
+														div(class="card-body")
+															p -Formular, proponer y monitorear la ejecución del Plan Operativo Institucional –POI- y su respectivo Presupuesto en función a los recursos disponibles.
+															p -Planificar, organizar, dirigir, controlar y evaluar la gestión administrativa, económica y financiera de la institución tanto para el buen funcionamiento institucional como para la óptima prestación de los servicios municipales.
+															p -Dirigir y evaluar la gestión administrativa, financiera y económica, asegurando el cumplimiento de las disposiciones emitidas por los sistemas de presupuesto, contabilidad, tesorería, abastecimiento y personal, así como mediante el análisis de los correspondientes estados financieros.
+															p -Coordinar, supervisar y evaluar las acciones y actividades de las Gerencias y Subgerencias bajo su dependencia.
+															p -Asesorar a la Alcaldía en temas relacionados a la administración y gestión municipal.
+															p -Convocar reuniones de coordinación con los Gerentes de los órganos de Línea, de Apoyo y Asesoramiento, Órganos Desconcentrados, tomando los acuerdos para la toma de las decisiones oportunas en la gestión municipal.
+															p -Formular y proponer al Alcalde disposiciones normativas y administrativas para el buen funcionamiento de la administración municipal.
+															p -Revisar, proponer y elevar al Alcalde normas propuestas por las diferentes unidades orgánicas de la institución.
+															p -Supervisar la formulación de los instrumentos de Gestión Institucional ROF, CAP, MOF, TUPA en coordinación con la Gerencia de Planeamiento y Presupuesto, y proponer al Alcalde para su aprobación.
+															p -Supervisar la formulación, ejecución y cumplimiento del Plan Operativo Institucional.
+															p -Supervisar y evaluar el desempeño de las funciones de las unidades orgánicas dependientes de la Gerencia Municipal.
+															p -Supervisar las acciones de control, permanencia y rotación de personal en coordinación con la Gerencia de Recursos Humanos.
+															p -Supervisar la evaluación, control y monitoreo del uso y destino de los recursos por donaciones y otros de naturaleza similar otorgadas a favor de la Municipalidad Provincial del Santa.
+															p -Cumplir y hacer cumplir, por delegación del Alcalde, los acuerdos del Concejo Municipal.
+															p -Cumplir y hacer cumplir, directamente o por delegación del Alcalde las recomendaciones del órgano de Control Institucional.
+															p -Canalizar reclamos y consultas de acción inmediata provenientes de los vecinos, disponiendo la intervención de las unidades orgánicas competentes, hasta lograr la atención solicitada.
+															p -Cumplir y hacer cumplir las funciones que sean delegadas por el Alcalde.
+															p -Proponer acciones y medidas administrativas tendientes ejecutar actos de control previo, concurrente y posterior sobre las unidades orgánicas de la Municipalidad.
+															p -Velar por la consistencia y articulación entre el Plan Estratégico Institucional, el Plan de Desarrollo Concertado, los Planes Operativos y el Presupuesto Participativo Institucional.
+															p -Coordinar el seguimiento y monitoreo de las actividades de los Planes Operativos de las unidades orgánicas de la Institución.
+															p -Participar en la Elaboración, Formulación, Ejecución y Control del Presupuesto Participativo en coordinación con los responsables de los órganos designados.
+															p -Gestionar de acuerdo a Ley, la asistencia técnica y financiera tanto nacional como internacional para la ejecución de obras y servicios de carácter municipal.
+															p -Participar cuando lo requiera el Alcalde o Concejo Municipal en las Sesiones de Concejo con voz pero sin voto en asuntos relacionados con la Administración Municipal.
+															p -Dirigir y coordinar la ejecución de los Planes de Desarrollo Local y programas socio-económicos de la Municipalidad, así como la prestación de servicios públicos locales.
+															p -Las demás funciones que le sean delegadas o asignadas por el Alcalde conforme a la Ley Orgánica de Municipalidades.
+								//- Gerencia de Administración y Finanzas
+								div(class="tab-pane fade show" id="list-gfinanzas" role="tabpanel" aria-labelledby="list-gfinanzas-list")
+									h3 Gerencia de Administración y Finanzas
+									div(class="card mb-3")
+										img(src="images/areas/gmunicipal/gmunicipal.jpg" class="card-img-top", alt="alcaldia")
+										div(class="card-body")
+											p GERENTE DE ADMINISTRACIÓN Y FINANZAS: 
+											div(id="accordion")
+												div(class="card")
+													div(class="card-header" id="headingOne")
+														h5(class="mb-0")
+															button(class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Presentación
+													div(id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion")
+														div(class="card-body")
+															p La Gerencia de Administración y Finanzas es el órgano de apoyo a la Alta Dirección, depende de la Gerencia Municipal, encargado de gestionar así como el manejo adecuado de los recursos económicos, financieros, materiales, patrimoniales y de servicio a través de las unidades orgánicas de Contabilidad, Tesorería, Logística, Control Patrimonial, Informática y Tecnologías de la Información, Servicios Generales y Equipo Mecánico, en procura de lograr los objetivos institucionales y eficiencia en el gasto público.
+												div(class="card")
+													div(class="card-header" id="headingTwo")
+														h5(class="mb-0")
+															button(class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") Atribuciones
+													div(id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion")
+														div(class="card-body")
+															p -Programar, dirigir, ejecutar, coordinar y controlar las actividades de Contabilidad, Tesorería, Logística, Control Patrimonial, Informática e Tecnologías de la Información y Comunicación, y Servicios Generales y Equipo Mecánico de la Municipalidad.
+															p -Dirigir, coordinar, supervisar y evaluar la administración económica y financiera de la entidad, así como definir medidas correctivas oportunas y necesarias.
+															p -Formular, proponer y monitorear la ejecución del Plan Operativo Institucional –POI- y su respectivo Presupuesto en función a los recursos disponibles.
+															p -Dirigir, coordinar, supervisar y evaluar el desarrollo de los procesos de gestión técnicos, así como, los Sistemas de Información Integrados, de Contabilidad, Tesorería, Logística, Control Patrimonial, para una efectiva y oportuna toma de decisiones en procura de mejoras continuas en la administración municipal.
+															p -Administrar y supervisar los fondos y valores financieros de la Municipalidad.
+															p -Supervisar, conducir y coordinar el proceso de ejecución del gasto fiscal, el cual se sujeta al proceso de la ejecución presupuestal y financiera, mediante el registro en el SIAF-GL, de los datos relacionados con su formalización en el marco de las normas legales aplicables a cada una de sus etapas: Compromiso, Devengado y el Pago.
+															p -Controlar y evaluar el registro oportuno en el Sistema Electrónico de Adquisiciones y Contrataciones del Estado – SEACE, de las convocatorias de todos los procesos de selección se en adquisición y suministro de bienes, contratación de servicios generales, servicios de consultoría en general, contratación de servicios de consultoría de obras, y ejecución de obras, con los procedimientos que la normativa de contrataciones establece.
+															p -Organizar, ejecutar y controlar la formulación y actualización del Balance General, Estados Financieros y registro de valores de la Municipalidad, y remitir en los plazos de ley, la información pertinente a los organismos públicos correspondientes.
+															p -Elevar al titular del pliego, la información relacionada con la Cuenta General de la República, para su remisión a la Contaduría Pública de la Nación.
+															p -Ejecutar el control previo de las operaciones económicas, así como de los bienes asignados.
+															p -Informar mensualmente los ingresos y egresos de la Municipalidad a la Gerencia de Planeamiento y Presupuesto y Gerencia Municipal.
+															p -Consolidar el Cuadro de necesidades de la Municipalidad, remitiendo oportunamente a la Gerencia de Planeamiento y Presupuesto.
+															p -Organizar y optimizar la administración financiera de la Municipalidad y proporcionar la información contable oportuna para facilitar la toma de decisiones
+															p -Proponer a la Alta Dirección normas jurídicas de orden interno como Directivas; Comunicados, orientados a la mejora continua de la Administración Municipal en lo que respecta a su área, para su aprobación, difusión y cumplimiento obligatorio por las demás unidades orgánicas.
+															p -Controlar la elaboración oportuna del Plan Anual de Contrataciones (PAC), efectuando las coordinaciones presupuestales, con la Gerencia de Planeamiento y Presupuesto.
+															p -Garantizar el abastecimiento oportuno de los bienes y/o servicios con criterios cuantitativos – cualitativos, asegurando el funcionamiento institucional.
+															p -Gestionar el mantenimiento preventivo y correctivo de la infraestructura, así como la administración patrimonial de la institución.
+															p -Administrar los fondos y valores económico – financieros de la Municipalidad, canalizando adecuadamente los ingresos y efectuando los pagos correspondientes por los compromisos contraídos, de conformidad con las normas.
+															p -Generar información financiera acerca de ingresos y egresos (costos y gastos); proyecciones financieras de inversiones, así como de los compromisos asumidos, a través de órdenes de compra, órdenes de servicio, valorizaciones, planillas y otros, y remitirla mensualmente a la Gerencia de Planeamiento y Presupuesto y a la Gerencia Municipal.
+															p -Proponer y sustentar ante la Gerencia Municipal, el Plan Anual de Contrataciones –PAC- en función a necesidades y requerimientos reales de la institución.
+															p -Coordinar el mantenimiento preventivo y correctivo de la flota vehicular, maquinaria y equipos de la institución, a fin de asegurar la operatividad de los mismos.
+															p -Asegurar la elaboración de los estados financieros y sus respectivos análisis a nivel de ratios, para su presentación a los Órganos de Dirección y Gobierno.
+															p -Presentar a la Gerencia Municipal los estados financieros de la Municipalidad, para su aprobación.
+															p -Dirigir y garantizar el cumplimiento de las Normas de Austeridad y Racionalización en los gastos, aprobadas por la institución.
+															p -Revisar la actualización del control patrimonial respecto de los activos fijos de la Municipalidad, dando la orden de realizar el inventario de los bienes muebles, así como, la incorporación físico-legal para la adjudicación de la propiedad de los bienes registrables en conformidad a los dispositivos legales vigentes.
+															p -Suscribir la documentación que genere la compra y/o transferencia de propiedad de vehículos y maquinarias, ante la SUNARP.
+															p -Planificar y efectuar el control de los bienes patrimoniales (activos) de la institución, velando por la actualización permanente (depreciación y reevaluación) y saneamiento físico legal.
+															p -Mantener actualizado el registro de los activos fijos y donaciones, efectuando periódicamente el inventario patrimonial correspondiente.
+															p -Elaborar, controlar y mantener actualizado bienes muebles de la municipalidad, registrando las altas, bajas y la transferencia de bienes en la institución, diseñando para ello una base de datos y desarrollando un sistema de información que garantice su registro oportuno y seguro y permita generar más información para tomar decisiones.
+															p -Mantener en custodia el archivo de los documentos fuente que sustenta el ingreso, baja y transferencia de los bienes patrimoniales.
+															p -Mantener al día sobre los seguros, revisiones técnicas de los vehículos y maquinaria de la Municipalidad.
+															p -Coordinar en forma conjunta con la Subgerencia de Contabilidad, la conciliación de Inventarios de Activos Fijos y Cuentas de Orden de Bienes Patrimoniales, considerando lo físico con lo registrado en tarjetas y/o archivos magnéticos.
+															p -Cumplir con las disposiciones contenidas en los Sistemas Administrativos del Sector Público, en la parte que les corresponda.
+															p -Las demás funciones inherentes al cargo, que le asigne la Gerencia Municipal y/o Alcalde.
+											h4 SUBGERENCIAS
+											div(class="card-deck")
+												div(class="card")
+													img(class="card-img-top" src="images/areas/gfinanzas/contabilidad.jpg", alt="")
+													div(class="card-footer") 
+														p Sub Gerencia de Contabilidad
+												div(class="card")
+													img(class="card-img-top" src="images/areas/gfinanzas/contabilidad.jpg", alt="")
+													div(class="card-footer")
+														p Sub Gerencia de Tesorería
+												div(class="card")
+													img(class="card-img-top" src="images/areas/gfinanzas/contabilidad.jpg", alt="")
+													div(class="card-footer")
+														p Sub Gerencia de Logística
+											div(class="card-deck")
+												div(class="card")
+													img(class="card-img-top" src="images/areas/gfinanzas/contabilidad.jpg", alt="")
+													div(class="card-footer") 
+														p Sub Gerencia de Control Patrimonial
+												div(class="card")
+													img(class="card-img-top" src="images/areas/gfinanzas/contabilidad.jpg", alt="")
+													div(class="card-footer")
+														p Sub Gerencia de Serv. Generales y Equipo Mecánico
+												div(class="card")
+													img(class="card-img-top" src="images/areas/gfinanzas/contabilidad.jpg", alt="")
+													div(class="card-footer")
+														p Sub Gerencia de Serv. Generales y Equipo Mecánico
+								//- Gerencia De Administración Tributaria
+								div(class="tab-pane fade show" id="list-gtributaria" role="tabpanel" aria-labelledby="list-gtributaria-list")
+									h3 Gerencia de Administración Tributaria
+									div(class="card mb-3")
+										img(src="images/areas/gmunicipal/gmunicipal.jpg" class="card-img-top", alt="alcaldia")
+										div(class="card-body")
+											p GERENTE DE ADMINISTRACIÓN TRIBUTARIA: 
+											div(id="accordion")
+												div(class="card")
+													div(class="card-header" id="headingOne")
+														h5(class="mb-0")
+															button(class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Presentación
+													div(id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion")
+														div(class="card-body")
+															p La Gerencia de Administración y Finanzas es el órgano de apoyo a la Alta Dirección, depende de la Gerencia Municipal, encargado de gestionar así como el manejo adecuado de los recursos económicos, financieros, materiales, patrimoniales y de servicio a través de las unidades orgánicas de Contabilidad, Tesorería, Logística, Control Patrimonial, Informática y Tecnologías de la Información, Servicios Generales y Equipo Mecánico, en procura de lograr los objetivos institucionales y eficiencia en el gasto público.
+												div(class="card")
+													div(class="card-header" id="headingTwo")
+														h5(class="mb-0")
+															button(class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") Atribuciones
+													div(id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion")
+														div(class="card-body")
+															p
+								div(class="tab-pane fade show" id="list-ajuridica" role="tabpanel" aria-labelledby="list-ajuridica-list")
+									h3 Asesoría Jurídica
+								div(class="tab-pane fade show" id="list-dlocal" role="tabpanel" aria-labelledby="list-dlocal-list")
+									h3 Gerencia de Desarrollo Local
+								div(class="tab-pane fade show" id="list-dsocial" role="tabpanel" aria-labelledby="list-dsocial-list")
+									h3 Gerencia de Desarrollo Social
+								div(class="tab-pane fade show" id="list-gambiental" role="tabpanel" aria-labelledby="list-gambiental-list")
+									h3 Gerencia de Gestión Ambiental
+								div(class="tab-pane fade show" id="list-informatica" role="tabpanel" aria-labelledby="list-informatica-list")
+									h3 Gerencia de Informática y TIC
+								div(class="tab-pane fade show" id="list-obras" role="tabpanel" aria-labelledby="list-obras-list")
+									h3 Gerencia de Obras
+								div(class="tab-pane fade show" id="list-presupuesto" role="tabpanel" aria-labelledby="list-presupuesto-list")
+									h3 Gerencia de Planeamiento y Presupuesto
+								div(class="tab-pane fade show" id="list-rhumanos" role="tabpanel" aria-labelledby="list-rhumanos-list")
+									h3 Gerencia de Recursos Humanos
+								div(class="tab-pane fade show" id="list-transporte" role="tabpanel" aria-labelledby="list-transporte-list")
+									h3 Gerencia de Transporte y Tránsito
+								div(class="tab-pane fade show" id="list-descentral" role="tabpanel" aria-labelledby="list-descentral-list")
+									h3 Oficinas Descentralizadas

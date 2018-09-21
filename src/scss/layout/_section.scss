@@ -11,9 +11,12 @@
     }
     
     &__content {
-        padding: 15px 0px 15px 0px;
+        padding: 15px 15px 20px 15px;
+        margin: 40px 0px 80px 0px;
     }
-    
+    &__contentf{
+        padding: 15px 15px 0px 15px;
+    }
     &__bg {
         background-color: darken($color-light, 5%);
     }
