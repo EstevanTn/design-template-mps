@@ -2,7 +2,7 @@ extends ../structure/_layout
 block content
     section.wrapper__content
         .section.section__parallax.section__plaza
-        .section.py-5
+        .section.py-3.py-md-5
             h3.section__title Reciente
             .section__content
                 .row
@@ -12,13 +12,13 @@ block content
                                 #carouselOne(class="carousel carousel__bg slide" data-ride="slide")
                                     .carousel-inner
                                         .carousel-item.active
-                                            img(src="images/portada/chimbote.png")
+                                            img(src="images/reciente/turismo7.png")
                                         .carousel-item
-                                            img(src="images/portada/chimbote.png")
+                                            img(src="images/reciente/turismo7.png")
                                         .carousel-item
-                                            img(src="images/portada/chimbote.png")
+                                            img(src="images/reciente/turismo7.png")
                                         .carousel-item
-                                            img(src="images/portada/chimbote.png")
+                                            img(src="images/reciente/turismo7.png")
                                     a.carousel-control-prev(data-slide="prev" href="#carouselOne")
                                         i.fa.fa-chevron-left
                                     a.carousel-control-next(data-slide="next" href="#carouselOne")
@@ -27,12 +27,16 @@ block content
                                 #carouselTwo(class="carousel carousel__bg slide" data-ride="slide")
                                     .carousel-inner
                                         .carousel-item.active
+                                            img(src="images/reciente/turismo8.png")
                                         .carousel-item
+                                            img(src="images/reciente/turismo8.png")
                                         .carousel-item
+                                            img(src="images/reciente/turismo8.png")                                        
                                         .carousel-item
-                                    a.carousel-control-prev(data-slide="prev" href="#carouseTwo")
+                                            img(src="images/reciente/turismo8.png")
+                                    a.carousel-control-prev(data-slide="prev" href="#carouselTwo")
                                         i.fa.fa-chevron-left
-                                    a.carousel-control-next(data-slide="next" href="#carouseTwo")
+                                    a.carousel-control-next(data-slide="next" href="#carouselTwo")
                                         i.fa.fa-chevron-right
                     .col-12.col-md-4
                         .news__panel
@@ -53,26 +57,12 @@ block content
         .section.section__parallax.section__bg.py-5
             .section__content
                 .row.flex-center
-                    .col-12.col-sm-6.col-md-4
+                    .col-12.col-sm-6.col-md-4.pt-sm-3
                         a(href="servicios.html" class="")
                             img(src="images/seccion_uno/servicio.jpg", alt="", class="img-fluid")
-                            //- .box__card-icon
-                            //-     i.ion-md-checkmark
-                            //- .box__card-content
-                                strong.text-title Servicios
-                    .col-12.col-sm-6.col-md-4
+                    .col-12.col-sm-6.col-md-4.pt-sm-3
                         a(href="novedades.html" class="")
                             img(src="images/seccion_uno/novedades.jpg", alt="", class="img-fluid")
-                            //- .box__card-icon
-                            //-     i.ion-md-checkmark
-                            //- .box__card-content
-                            //-     strong.text-title Novedades
-                    .col-12.col-sm-6.col-md-4
+                    .col-12.col-sm-6.col-md-4.pt-sm-3
                         a(href="informate.html" class="")
                             img(src="images/seccion_uno/informate.jpg", alt="", class="img-fluid")
-                            //- .box__card-icon
-                            //-     i.ion-md-checkmark
-                            //- .box__card-content
-                            //-     strong.text-title Informate
-
-        

@@ -38,14 +38,42 @@ section.wrapper__header
                         a(class="nav-link" href="index.html")
                             i.ion.ion-md-home
                             | Inicio
-                    li(class="nav-item")
-                        a(class="nav-link" href="#")
-                            i.ion.ion-md-business
+                    li(class="nav-item dropdown")
+                        a(class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown" href="#" role="button" data-haspoup="true" aria-expanded="false")
+                            i.fa.fa-institution
                             | Municipalidad
-                    li(class="nav-item")
-                        a(class="nav-link" href="#")
-                            i.ion.ion-md-globe
+                        div(class="dropdown-menu" labelledby="navbarDropdown")
+                            a.dropdown-item(href="autoridades.html") 
+                                i.fa.fa-group 
+                                span  Autoridades Municipales
+                            .dropdown-divider
+                            a.dropdown-item(href="area.html")
+                                i.fa.fa-address-card-o
+                                span  Gerencias
+                            .dropdown-divider
+                            a.dropdown-item(href="funcionarios.html")
+                                i.fa.fa-street-view
+                                span  Funcionarios Municipales
+                            .dropdown-divider
+                            a.dropdown-item(href="organigrama.html")
+                                i.fa.fa-sitemap
+                                span  Organigrama
+                    li(class="nav-item dropdown")
+                        a(class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdown" href="#" role="button" data-haspoup="true" aria-expanded="false")
+                            i.fa.fa-handshake-o
                             | Ciudad
+                        div(class="dropdown-menu" labelledby="navbarDropdown")
+                            a.dropdown-item(href="#")
+                                i.fa.fa-book
+                                span  Agenda Municipal
+                            .dropdown-divider
+                            a.dropdown-item(href="#")
+                                i.fa.fa-map-marker
+                                span  Mercados
+                            .dropdown-divider
+                            a.dropdown-item(href="#")
+                                i.fa.fa-camera
+                                span  Turismo
                     li(class="nav-item")
                         a(class="nav-link" href="#")
                             i.ion.ion-md-bookmarks
@@ -55,14 +83,26 @@ section.wrapper__header
                             i.fa.fa-handshake-o
                             | Servicios
                         div(class="dropdown-menu" labelledby="navbarDropdown")
-                            a.dropdown-item(href="#") Action 1
+                            a.dropdown-item(href="#")
+                                i.fa.fa-ambulance
+                                span  Salud y Ambiente
                             .dropdown-divider
-                            a.dropdown-item(href="#") Action 2
+                            a.dropdown-item(href="#")
+                                i.fa.fa-car
+                                span  Seguridad Ciudadana
+                            .dropdown-divider
+                            a.dropdown-item(href="#")
+                                i.fa.fa-users
+                                span  Social
+                            .dropdown-divider
+                            a.dropdown-item(href="#")
+                                i.fa.fa-newspaper-o
+                                span  Cultura
                     li(class="nav-item")
-                        a(class="nav-link" href="#")
+                        a(class="nav-link" href="https://gator3024.hostgator.com:2096")
                             i.ion.ion-md-mail
                             | Email
                     li(class="nav-item")
                         a(class="nav-link" href="transparencia.html")
-                            i.ion.ion-md-eye
+                            img(src="images/portada/pte.png")
                             | Transparencia
