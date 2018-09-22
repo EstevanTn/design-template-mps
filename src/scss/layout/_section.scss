@@ -14,11 +14,19 @@
         //padding: 15px 15px 20px 15px;
         margin: 20px 0px 20px 0px;
     }
+
     &__contentf{
         padding: 15px 15px 0px 15px;
     }
+
     &__bg {
         background-color: darken($color-light, 5%);
+    }
+
+    &__bg-striped {
+        background-image: url('../images/striped-bg.jpg');
+        background-repeat: repeat !important;
+        background-size: 15% !important;
     }
 
     &__parallax {
