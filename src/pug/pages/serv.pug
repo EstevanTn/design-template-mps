@@ -1,0 +1,63 @@
+extends ../structure/_layout
+block content
+    section.wrapper__content
+        .section.section 
+            h1.section__title SERVICIOS
+            .section__content
+                .row.flex-center
+                    .col-12.col-md-3.col-sm-6
+                    .col-12.col-md-9.col-sm-6
+                        h3.section__title AREAS VERDES
+                        br
+                        img(class="img-fluid mx-auto d-block" src="images/servicios/areas-verdes/areas-verdes.jpg", alt="")
+                        br
+                        p El programa de la Municipalidad Provincial del Santa Áreas Verdes forma parte de la estrategia municipal de Chimbote:	Ciudad educadora en lo ambiental, que apuesta por la formacion de conocimientos, actitudes y prácticas en los ciudadanos que genere voluntad y compromiso por el cuidado y mejora del ambiente de la ciudad, poniendo especial énfasis en los niños, niñas y adolescentes.
+                        p "Areas verdes" es la encargada de promover programas de desarrollo y mantenimiento de las áreas verdes.
+                        nav(class="nav nav-tabs" id="nav-tab" role="tablist")
+                            a(class="nav-item nav-link active" id="nav-objetivo-tab" data-toggle="tab" href="#nav-objetivo" role="tab" aria-controls="nav-ojetivo" aria-selected="true") Objetivo
+                            a(class="nav-item nav-link" id="nav-mision-tab" data-toggle="tab" href="#nav-mision" role="tab" aria-controls="nav-mision" aria-selected="false") Misión
+                            a(class="nav-item nav-link" id="nav-funciones-tab" data-toggle="tab" href="#nav-funciones" role="tab" aria-controls="nav-funciones" aria-selected="false") Funciones
+                        nav(class="tab-content" id="nav-tabContent")
+                            div(class="tab-pane fade show active" id="nav-objetivo" role="tabpanel" aria-labelledby="nav-objetivo-tab") Formar prácticas responsables para la protección y mejora del ambiente en los ciudadanos y ciudadanas de Lima Metropolitana mediante el fortalecimiento de capacidades ambientales y la implementación de sistemas ecoeficientes en las escuelas públicas.
+                            div(class="tab-pane fade" id="nav-mision" role="tabpanel" aria-labelledby="nav-mision-tab") Es mantener las áreas verdes de dominio publico en buen estado de conservacion, para mejorar el paisaje urbano.
+                            div(class="tab-pane fade" id="nav-funciones" role="tabpanel" aria-labelledby="nav-funciones-tab") 
+                                p - Programar, coordinar, supervisar, ejecutar y evaluar acciones relacionadas con el riego, mantenimiento y conservación de los parques, jardines y áreas verdes del distrito.
+                                p - Programar, coordinar, supervisar, ejecutar y evaluar los servicios de riego en las áreas verdes, el mantenimiento de los canales de riego en el distrito.
+                                p - Asegurar el adecuado mantenimiento de las áreas verdes del distrito.
+                                p - Difundir programas de forestacion.
+                                p - Ejecutar campañas anuales de poda de arboles.
+                                p - Promover la capacitación de la comunidad organizada en los programas de conservación de los parques, jardines y áreas verdes del distrito.
+                                p - Formular, ejecutar y evaluar el plan operativo costeado en coordinación con la Gerencia de quien depende; disponiendo el uso adecuado de los recursos económicos, materiales, maquinaria y equipo asignados a la Unidad Orgánica.
+                                p - Realizar el costeo de las actividades que desarrolla la Unidad Orgánica.
+                                p - Realizar el costeo de los procedimientos administrativos, por los servicios que presta la Municipalidad, en los asuntos de su competencia.
+                                p - Otras funciones en el ámbito de su competencia que le asigne la Gerencia de Servicios a la Ciudad y Medio Ambiente.
+                        br
+                        h3.section__title Noticias recientes
+                        .row
+                            .col-12.col-md-8
+                                #carouselOne(class="carousel carousel__bg slide" data-ride="slide")
+                                    .carousel-inner
+                                        .carousel-item.text-center.active
+                                                img(src="images/reciente/turismo7.png")
+                                        .carousel-item.text-center
+                                                img(src="images/reciente/turismo7.png")
+                                        .carousel-item.text-center
+                                                img(src="images/reciente/turismo7.png")
+                                        .carousel-item.text-center
+                                                img(src="images/reciente/turismo7.png")
+                                    a.carousel-control-prev(data-slide="prev" href="#carouselOne")
+                                        i.fa.fa-chevron-left
+                                    a.carousel-control-next(data-slide="next" href="#carouselOne")
+                                        i.fa.fa-chevron-right
+                            br
+                            .col-12.col-md-4
+                                .news__panel
+                                    .news__panel-header
+                                        h3.news__panel-title Publicaciones
+                                    .news__panel-body
+                                        a(href="#publi-1") Publicación 1
+                                        a(href="#publi-2") Publicación 2
+                                        a(href="#publi-3") Publicación 3
+                                        a(href="#publi-4") Publicación 4
+                                        a(href="#publi-5") Publicación 5
+                                        a(href="#publi-6") Publicación 6        

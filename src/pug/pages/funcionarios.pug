@@ -1,0 +1,24 @@
+extends ../structure/_layout
+block content
+    section.wrapper__content
+        .section.section
+            h3.section__title FUNCIONARIOS
+            .section__content
+                .row.flex-center
+                    .col-12.col-md-3.col-sm-6
+                    .col-12.col-md-9.col-sm-6
+                        table(class="table table-hover")
+                            thead
+                                tr
+                                    th(scope="col") Periodo
+                                    th(scope="col") Descarga
+
+                            tbody
+                                tr
+                                    th(scope="row") Funcionarios Septiembre 2018
+                                    td(scope="row")
+                                        a(href="docs/funcionarios/DIRECTORIO FUNCIONARIOS Actualizado Septiembre 2018.pdf") Funcionarios Septiembre 2018
+                                tr
+                                    th(scope="row") Funcionarios Mayo 2018
+                                    td(scope="row")
+                                        a(href="docs/funcionarios/DIRECTORIO FUNCIONARIOS Actualizado Mayo 2018.pdf") Funcionarios Mayo 2018
