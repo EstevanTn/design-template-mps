@@ -1,0 +1,53 @@
+.sidebar {
+    ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        -webkit-padding-start: 0px;
+        li {
+            border-bottom: 1px solid rgba(0, 0, 0, .125);
+            &:last-child {
+                border-bottom: none;
+            }
+            a {
+                padding: .5rem 1rem;
+                text-align: left;
+                text-decoration: none;
+                &:hover,&:focus {
+                    border-left: 2px solid $primary-color;
+                }
+                + ul {
+                    display: none;
+                    li {
+                        &.active {
+                            a {
+                                border-left: 2px solid $primary-color;
+                            }
+                        }
+                    }
+                }
+            }
+            &.active {
+                > a {
+                    background-color: $primary-color;
+                    color: $color-light;
+                    + ul {
+                        border-top: 1px solid rgba(0, 0, 0, .125);
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    &__menu {
+        border: 1px solid rgba(0, 0, 0, .125);
+        background: $color-light;
+        border-radius: .3rem;
+    }
+}
+
+#sidebar-area {
+    @include hasta($md) {
+        max-height: 300px;
+    }
+}

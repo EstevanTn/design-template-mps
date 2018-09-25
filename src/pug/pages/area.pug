@@ -7,44 +7,58 @@ block content
 				.row
 					.col-12.col-md-3
 						.box__card-content
-							div(class="list-group" id="list-tab" role="tablist")
-								a(href="#list-alcaldia" class="list-group-item list-group-item-action" id="list-alcaldia-list" data-toggle="list" role="tab" aria-controls="alcaldia") Alcaldía
-								a(href="#list-gmunicipal" class="list-group-item list-group-item-action" id="list-gmunicipal-list" data-toggle="list" role="tab" aria-controls="gmunicipal") Gerencia Municipal
-								a(href="#list-gfinanzas" class="list-group-item list-group-item-action" id="list-gfinanzas-list" data-toggle="list" role="tab" aria-controls="gfinanzas") G. Administración y Finanzas
-								a(href="#list-gtributaria" class="list-group-item list-group-item-action" id="list-gtributaria-list" data-toggle="list" role="tab" aria-controls="gtributaria") G. Administración Tributaria
-								a(href="#list-ajuridica" class="list-group-item list-group-item-action" id="list-ajuridica-list" data-toggle="list" role="tab" aria-controls="ajuridica") G. Asesoría Jurídica
-								a(href="#list-dlocal" class="list-group-item list-group-item-action" id="list-dlocal-list" data-toggle="list" role="tab" aria-controls="dlocal") G. Desarrollo Local
-								a(href="#list-dsocial" class="list-group-item list-group-item-action" id="list-dsocial-list" data-toggle="list" role="tab" aria-controls="dsocial") G. Desarrollo Social y Humano
-								a(href="#list-gambiental" class="list-group-item list-group-item-action" id="list-gambiental-list" data-toggle="list" role="tab" aria-controls="gambiental") G. Gestión Ambiental y Salud Pública
-								a(href="#list-informatica" class="list-group-item list-group-item-action" id="list-informatica-list" data-toggle="list" role="tab" aria-controls="informatica") G. Informática y TIC
-								a(href="#list-obras" class="list-group-item list-group-item-action" id="list-obras-list" data-toggle="list" role="tab" aria-controls="obras") G. Obras Públicas
-								a(href="#list-presupuesto" class="list-group-item list-group-item-action" id="list-presupuesto-list" data-toggle="list" role="tab" aria-controls="presupuesto") G. Planeamiento y Presupuesto
-								a(href="#list-rhumanos" class="list-group-item list-group-item-action" id="list-rhumanos-list" data-toggle="list" role="tab" aria-controls="rhumanos") G. Recursos Humanos
-								a(href="#list-transporte" class="list-group-item list-group-item-action" id="list-transporte-list" data-toggle="list" role="tab" aria-controls="transporte") G. Transporte y Tránsito
-								a(href="#list-descentral" class="list-group-item list-group-item-action" id="list-descentral-list" data-toggle="list" role="tab" aria-controls="odescentral") Órganos Descentralizados							
+							.sidebar
+								ul(class="sidebar__menu" id="sidebar-area" role="tablist")
+									li(class="")
+										a(href="#list-alcaldia" class="" id="list-alcaldia-list" aria-controls="alcaldia") Alcaldía
+									li(class="")
+										a(href="#list-gmunicipal" class="" id="list-gmunicipal-list" aria-controls="gmunicipal") Gerencia Municipal
+										ul(class="")
+											li
+												a(href="#list-gfinanzas" class="" id="list-gfinanzas-list" aria-controls="gfinanzas") G. Administración y Finanzas
+											li
+												a(href="#list-gtributaria" class="" id="list-gtributaria-list" aria-controls="gtributaria") G. Administración Tributaria
+											li
+												a(href="#list-ajuridica" class="" id="list-ajuridica-list" aria-controls="ajuridica") G. Asesoría Jurídica
+											li
+												a(href="#list-dlocal" class="" id="list-dlocal-list" aria-controls="dlocal") G. Desarrollo Local
+											li
+												a(href="#list-dsocial" class="" id="list-dsocial-list" aria-controls="dsocial") G. Desarrollo Social y Humano
+											li
+												a(href="#list-gambiental" class="" id="list-gambiental-list" aria-controls="gambiental") G. Gestión Ambiental y Salud Pública
+											li
+												a(href="#list-informatica" class="" id="list-informatica-list" aria-controls="informatica") G. Informática y TIC
+											li
+												a(href="#list-obras" class="" id="list-obras-list" aria-controls="obras") G. Obras Públicas
+											li
+												a(href="#list-presupuesto" class="" id="list-presupuesto-list" aria-controls="presupuesto") G. Planeamiento y Presupuesto
+											li
+												a(href="#list-rhumanos" class="" id="list-rhumanos-list" aria-controls="rhumanos") G. Recursos Humanos
+											li
+												a(href="#list-transporte" class="" id="list-transporte-list" aria-controls="transporte") G. Transporte y Tránsito
+									li(class="")
+										a(href="#list-descentral" class="" id="list-descentral-list" aria-controls="odescentral") Órganos Descentralizados							
 
 					.col-12.col-md-9
 						.box__card-content
 							div(class="tab-content" id="nav-tabContent")
 								//- Alcaldía
 								div(class="tab-pane fade show active" id="list-alcaldia" role="tabpanel" aria-labelledby="list-alcaldia-list")
-									h3 Alcaldía
+									h3.page-header Alcaldía
 									div(class="card mb-3")
 										img(src="images/areas/alcaldia/alcaldia.jpg" class="card-img-top", alt="alcaldia")
 										div(class="card-body")
-											h5 ALCALDE: Neptalí Briceño Porras										
+											h5.page-title ALCALDE: Neptalí Briceño Porras										
 											div(id="accordion")
-												div(class="card")
+												div(class="card mt-2")
 													div(class="card-header" id="headingOne")
-														h5(class="mb-0")
-															button(class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne") Visión
+														h5(class="btn btn-link btn-block mb-0 p-0" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne")  Visión
 													div(id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion")
 														div(class="card-body")
 															p Somos una entidad competitiva, comprometida a la alta productividad, de reconocido prestigio, que contribuye a mejorar permanentemente la condición de vida de los Chimbotanos. La gestión se sustentará en el Ordenamiento Jurídico Vigente, una estructura orgánica funcional y adecuada, la prestación de servicios de calidad, el trabajo en equipo, la sostenibilidad presupuestaria, la protección del ambiente, la participación ciudadana y la comunicación efectiva.
-												div(class="card")
+												div(class="card mt-2")
 													div(class="card-header" id="headingTwo")
-														h5(class="mb-0")
-															button(class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") Funciones
+														h5(class="mb-0 btn btn-link btn-block p-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo") Funciones
 													div(id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion")
 														div(class="card-body")
 															p -Promover la adecuada prestación de los servicios públicos Locales.
@@ -55,14 +69,13 @@ block content
 															p -Articular permanentemente los planes integrales de desarrollo distrital y los Presupuestos Participativos.
 															p -Promover, apoyar y ejecutar proyectos de inversión y servicios públicos municipales que presenten, objetivamente, externalidades o economías de escala de ámbito provincial.
 															p -Emitir las normas técnicas generales, en materia de organización del espacio físico y uso del suelo así como sobre protección y conservación del ambiente.
-												div(class="card")
+												div(class="card mt-2")
 													div(class="card-header" id="headingThree")
-														h5(class="mb-0")
-															button(class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree") Ubicación
-												div(id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion")
-													div(class="card-body")
-														p - Teléfono: 043 321331 - 043 328890
-														p - Dirección: Jr. Enrique Palacios 341
+														h5(class="mb-0 btn btn-link btn-block p-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree") Ubicación
+													div(id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion")
+														div(class="card-body")
+															p - Teléfono: 043 321331 - 043 328890
+															p - Dirección: Jr. Enrique Palacios 341
 								//- Gerencia Municipal
 								div(class="tab-pane fade show" id="list-gmunicipal" role="tabpanel" aria-labelledby="list-gmunicipal-list")
 									h3 Gerencia Municipal
